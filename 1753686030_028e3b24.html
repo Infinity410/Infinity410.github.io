@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>科技情报报告 - 2025年07月28日</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            color: #ffffff;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 2px solid #00ff88;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            color: #00ff88;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+        }
+        
+        .header .subtitle {
+            font-size: 1.2rem;
+            color: #a0a0a0;
+            text-transform: uppercase;
+        }
+        
+        .infographic-section {
+            text-align: center;
+            margin: 40px 0;
+            padding: 30px;
+            background: rgba(26, 26, 26, 0.8);
+            border-radius: 10px;
+            border: 1px solid #333333;
+        }
+        
+        .infographic-section h2 {
+            color: #00d4ff;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .infographic-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.2);
+            margin: 20px 0;
+        }
+        
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .topic-card {
+            background: rgba(26, 26, 26, 0.9);
+            border-radius: 10px;
+            padding: 25px;
+            border: 1px solid #333333;
+            transition: all 0.3s ease;
+        }
+        
+        .topic-card:hover {
+            border-color: #00ff88;
+            box-shadow: 0 5px 20px rgba(0, 255, 136, 0.3);
+        }
+        
+        .topic-title {
+            color: #00ff88;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #00ff88;
+            padding-bottom: 10px;
+        }
+        
+        .news-item {
+            margin-bottom: 25px;
+            padding: 15px;
+            background: rgba(10, 10, 10, 0.5);
+            border-radius: 8px;
+            border-left: 3px solid #00d4ff;
+        }
+        
+        .news-title {
+            color: #ffffff;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        
+        .news-title a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .news-title a:hover {
+            color: #00ff88;
+        }
+        
+        .news-abstract {
+            color: #a0a0a0;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+        
+        .news-analysis {
+            color: #666666;
+            font-size: 0.9rem;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+        
+        .news-meta {
+            color: #00d4ff;
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .news-link {
+            color: #00ff88;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        
+        .news-link:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.8);
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid #333333;
+            margin-top: 60px;
+            color: #666666;
+        }
+        
+        .cyber-decoration {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            opacity: 0.1;
+            background-image: 
+                linear-gradient(90deg, transparent 98%, #00ff88 100%),
+                linear-gradient(0deg, transparent 98%, #00d4ff 100%);
+            background-size: 50px 50px;
+        }
+        
+        @media (max-width: 768px) {
+            .topics-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cyber-decoration"></div>
+    
+    <div class="container">
+        <header class="header">
+            <h1>科技情报报告</h1>
+            <div class="subtitle">每日简报 • 2025年07月28日</div>
+        </header>
+        
+        <div class="topics-grid">
+            <div class="topic-card">
+                <h2 class="topic-title">[01] 科技公司动态</h2>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://techcrunch.com/2025/07/25/meta-names-shengjia-zhao-as-chief-scientist-of-ai-superintelligence-unit/" target="_blank">1.1 Meta任命ChatGPT联合研发者为AI实验室首席科学家</a>
+                    </h3>
+                    <p class="news-abstract">Meta宣布任命ChatGPT联合研发者赵晟佳为AI超级智能部门首席科学家，进一步强化其在AI领域的技术实力。</p>
+                    <p class="news-analysis">分析: 此举有助于Meta在AI技术研发上取得突破，提升其在全球AI竞争中的地位。</p>
+                    <div class="news-meta">
+                        <span>来源: 财新网 • 2025-07-25</span>
+                        <a href="https://techcrunch.com/2025/07/25/meta-names-shengjia-zhao-as-chief-scientist-of-ai-superintelligence-unit/" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://www.reuters.com/world/china/huawei-shows-off-ai-computing-system-rival-nvidias-top-product-2025-07-26/" target="_blank">1.2 华为展示新型AI计算系统，与英伟达顶级产品竞争</a>
+                    </h3>
+                    <p class="news-abstract">华为在上海世界人工智能大会上展示了新型AI计算系统，旨在与英伟达的顶级产品竞争，推动其在全球AI硬件市场的布局。</p>
+                    <p class="news-analysis">分析: 华为此举将进一步巩固其在AI硬件市场的地位，挑战英伟达的市场主导地位。</p>
+                    <div class="news-meta">
+                        <span>来源: 路透社 • 2025-07-26</span>
+                        <a href="https://www.reuters.com/world/china/huawei-shows-off-ai-computing-system-rival-nvidias-top-product-2025-07-26/" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://36kr.com/search/articles/%E7%89%B9%E6%96%AF%E5%8F%A6%E7%AC%AC%E4%B8%89%E4%BB%A3%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%B7%B2%E5%9C%A8%E7%BE%8E%E5%9B%BD%E5%B7%A5%E5%8E%82%E8%BF%9B%E8%A1%8C%E5%AE%9E%E6%B5%8B%EF%BC%8C%E9%A2%84%E8%AE%A12025%E5%B9%B4%E9%9D%A2%E5%90%91%E4%B8%AD%E5%9B%BDC%E7%AB%AF%E5%B8%82%E5%9C%BA%E6%8E%A8%E5%87%BA%EF%BC%8C%E5%B0%86%E8%BF%9B%E5%85%A5%E5%AE%B6%E5%BA%AD%E7%AD%89%E6%B6%88%E8%B4%B9%E5%9C%BA%E6%99%AF" target="_blank">1.3 特斯拉第三代机器人实测，预计2025年进入中国消费市场</a>
+                    </h3>
+                    <p class="news-abstract">特斯拉第三代机器人在美国工厂进行实测，预计2025年面向中国C端市场推出，将进入家庭等消费场景。</p>
+                    <p class="news-analysis">分析: 特斯拉机器人的推出将引领智能机器人市场的发展，为消费者带来全新的智能体验。</p>
+                    <div class="news-meta">
+                        <span>来源: 新浪财经 • 2025-07-28</span>
+                        <a href="https://36kr.com/search/articles/%E7%89%B9%E6%96%AF%E5%8F%A6%E7%AC%AC%E4%B8%89%E4%BB%A3%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%B7%B2%E5%9C%A8%E7%BE%8E%E5%9B%BD%E5%B7%A5%E5%8E%82%E8%BF%9B%E8%A1%8C%E5%AE%9E%E6%B5%8B%EF%BC%8C%E9%A2%84%E8%AE%A12025%E5%B9%B4%E9%9D%A2%E5%90%91%E4%B8%AD%E5%9B%BDC%E7%AB%AF%E5%B8%82%E5%9C%BA%E6%8E%A8%E5%87%BA%EF%BC%8C%E5%B0%86%E8%BF%9B%E5%85%A5%E5%AE%B6%E5%BA%AD%E7%AD%89%E6%B6%88%E8%B4%B9%E5%9C%BA%E6%99%AF" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://36kr.com/search/articles/%E8%B4%9D%E7%B4%A2%E6%96%AF%E6%8A%9B%E5%94%AE%E5%A4%A7%E9%87%8F%E4%BA%9A%E9%A9%AC%E9%80%8A%E8%82%A1%E7%A5%A8%EF%BC%8C%E5%A5%97%E7%8E%B0%E8%B6%85400%E4%BA%BF%E5%85%83" target="_blank">1.4 贝索斯抛售大量亚马逊股票，套现超400亿元</a>
+                    </h3>
+                    <p class="news-abstract">亚马逊公司创始人杰夫・贝索斯近期完成了一轮大规模亚马逊股票的抛售，累计套现近57亿美元（约合408亿元人民币）。</p>
+                    <p class="news-analysis">分析: 贝索斯的抛售行为可能与其个人财务规划有关，但对亚马逊股价短期内可能产生一定影响。</p>
+                    <div class="news-meta">
+                        <span>来源: 新浪财经 • 2025-07-28</span>
+                        <a href="https://36kr.com/search/articles/%E8%B4%9D%E7%B4%A2%E6%96%AF%E6%8A%9B%E5%94%AE%E5%A4%A7%E9%87%8F%E4%BA%9A%E9%A9%AC%E9%80%8A%E8%82%A1%E7%A5%A8%EF%BC%8C%E5%A5%97%E7%8E%B0%E8%B6%85400%E4%BA%BF%E5%85%83" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://www.huxiu.com/article/4628070.html" target="_blank">1.5 LeCun回应赵晟佳出任“首席科学家”</a>
+                    </h3>
+                    <p class="news-abstract">LeCun对赵晟佳出任Meta AI实验室首席科学家一事作出回应，表示对其能力和贡献的认可。</p>
+                    <p class="news-analysis">分析: LeCun的回应进一步肯定了赵晟佳在AI领域的专业地位，有助于提升Meta在AI领域的影响力。</p>
+                    <div class="news-meta">
+                        <span>来源: 量子位 • 1分钟前</span>
+                        <a href="https://www.huxiu.com/article/4628070.html" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+            </div>
+            <div class="topic-card">
+                <h2 class="topic-title">[02] 监管动态</h2>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://www.reuters.com/sustainability/boards-policy-regulation/us-commerce-secretary-says-trump-really-likes-tiktok-app-has-move-us-ownership-2025-07-27/" target="_blank">2.1 美国商务部长：TikTok须转为美国本土所有</a>
+                    </h3>
+                    <p class="news-abstract">美国商务部长表示，尽管特朗普喜爱TikTok，但该应用必须转为美国本土所有，凸显中美在数据安全与科技主权方面的持续博弈。</p>
+                    <p class="news-analysis">分析: 此举或将影响TikTok在美国的运营和发展，进一步加剧中美科技竞争。</p>
+                    <div class="news-meta">
+                        <span>来源: 路透社 • 2025-07-27</span>
+                        <a href="https://www.reuters.com/sustainability/boards-policy-regulation/us-commerce-secretary-says-trump-really-likes-tiktok-app-has-move-us-ownership-2025-07-27/" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://techcrunch.com/2025/07/26/u-k-starts-enforcing-online-age-check-rules/" target="_blank">2.2 U.K. starts enforcing online age check rules</a>
+                    </h3>
+                    <p class="news-abstract">英国开始实施在线年龄检查规则，以加强对未成年人的网络保护。</p>
+                    <p class="news-analysis">分析: 新规的实施将提高在线平台对未成年人的保护力度，但也可能增加平台的运营成本。</p>
+                    <div class="news-meta">
+                        <span>来源: TechCrunch • 2025-07-26</span>
+                        <a href="https://techcrunch.com/2025/07/26/u-k-starts-enforcing-online-age-check-rules/" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://www.21jingji.com/article/20250709/herald/ca428a898ad3de9c23d8111c32461b40.html" target="_blank">2.3 江苏：县级以下禁止开发政务服务APP</a>
+                    </h3>
+                    <p class="news-abstract">江苏省发布政策，县级以下地区禁止开发新的政务服务APP，优化政务资源。</p>
+                    <p class="news-analysis">分析: 此举有助于减少政务APP的重复建设，提升政务服务效率和用户体验。</p>
+                    <div class="news-meta">
+                        <span>来源: 21财经网 • 2025-07-09</span>
+                        <a href="https://www.21jingji.com/article/20250709/herald/ca428a898ad3de9c23d8111c32461b40.html" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://www.21jingji.com/article/20250623/herald/da33f59b3f9658069c3ddcac22aba978.html" target="_blank">2.4 设置科创成长层服务尚未盈利科技企业</a>
+                    </h3>
+                    <p class="news-abstract">为支持尚未盈利的科技企业发展，相关部门设置科创成长层，提供专项服务。</p>
+                    <p class="news-analysis">分析: 此举将为科技企业提供更多融资和发展机会，促进科技创新和产业升级。</p>
+                    <div class="news-meta">
+                        <span>来源: 21财经网 • 2025-06-23</span>
+                        <a href="https://www.21jingji.com/article/20250623/herald/da33f59b3f9658069c3ddcac22aba978.html" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="http://www.caixin.com/2019-04-26/101409065.html" target="_blank">2.5 反侵权公告：凤凰网科技、新浪微博擅改标题歪曲财新文章本意</a>
+                    </h3>
+                    <p class="news-abstract">财新网发布反侵权公告，谴责凤凰网科技、新浪微博擅自修改标题，歪曲文章原意的行为。</p>
+                    <p class="news-analysis">分析: 此举有助于维护新闻媒体的合法权益，促进新闻行业的健康发展。</p>
+                    <div class="news-meta">
+                        <span>来源: 财新网 • 2019-04-26</span>
+                        <a href="http://www.caixin.com/2019-04-26/101409065.html" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <p>© 2025 Tech Intelligence Report | 极简赛博风格设计</p>
+            <p style="margin-top: 10px; color: #00ff88;">Generated on 2025年07月28日</p>
+        </footer>
+    </div>
+</body>
+</html>
