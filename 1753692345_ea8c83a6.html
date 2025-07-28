@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>科技情报报告 - 2025年07月28日</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            color: #ffffff;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 2px solid #00ff88;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            color: #00ff88;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+        }
+        
+        .header .subtitle {
+            font-size: 1.2rem;
+            color: #a0a0a0;
+            text-transform: uppercase;
+        }
+        
+        .infographic-section {
+            text-align: center;
+            margin: 40px 0;
+            padding: 30px;
+            background: rgba(26, 26, 26, 0.8);
+            border-radius: 10px;
+            border: 1px solid #333333;
+        }
+        
+        .infographic-section h2 {
+            color: #00d4ff;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .infographic-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.2);
+            margin: 20px 0;
+        }
+        
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .topic-card {
+            background: rgba(26, 26, 26, 0.9);
+            border-radius: 10px;
+            padding: 25px;
+            border: 1px solid #333333;
+            transition: all 0.3s ease;
+        }
+        
+        .topic-card:hover {
+            border-color: #00ff88;
+            box-shadow: 0 5px 20px rgba(0, 255, 136, 0.3);
+        }
+        
+        .topic-title {
+            color: #00ff88;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #00ff88;
+            padding-bottom: 10px;
+        }
+        
+        .news-item {
+            margin-bottom: 25px;
+            padding: 15px;
+            background: rgba(10, 10, 10, 0.5);
+            border-radius: 8px;
+            border-left: 3px solid #00d4ff;
+        }
+        
+        .news-title {
+            color: #ffffff;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        
+        .news-title a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .news-title a:hover {
+            color: #00ff88;
+        }
+        
+        .news-abstract {
+            color: #a0a0a0;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+        
+        .news-analysis {
+            color: #666666;
+            font-size: 0.9rem;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+        
+        .news-meta {
+            color: #00d4ff;
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .news-link {
+            color: #00ff88;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        
+        .news-link:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.8);
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid #333333;
+            margin-top: 60px;
+            color: #666666;
+        }
+        
+        .cyber-decoration {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            opacity: 0.1;
+            background-image: 
+                linear-gradient(90deg, transparent 98%, #00ff88 100%),
+                linear-gradient(0deg, transparent 98%, #00d4ff 100%);
+            background-size: 50px 50px;
+        }
+        
+        @media (max-width: 768px) {
+            .topics-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cyber-decoration"></div>
+    
+    <div class="container">
+        <header class="header">
+            <h1>科技情报报告</h1>
+            <div class="subtitle">每日简报 • 2025年07月28日</div>
+        </header>
+        
+        <div class="topics-grid">
+            <div class="topic-card">
+                <h2 class="topic-title">[01] 科技公司动态</h2>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://www.reuters.com/world/china/huawei-shows-off-ai-computing-system-rival-nvidias-top-product-2025-07-26/" target="_blank">1.1 华为在2025年世界人工智能大会上展示了其最新的AI计算系统，旨在与英伟达的顶级产品竞争</a>
+                    </h3>
+                    <p class="news-abstract">华为展示了最新AI计算系统，挑战英伟达市场地位。</p>
+                    <p class="news-analysis">分析: 此举彰显华为在全球AI硬件市场的雄心，可能加剧市场竞争。</p>
+                    <div class="news-meta">
+                        <span>来源: 路透社 • 2025-07-26</span>
+                        <a href="https://www.reuters.com/world/china/huawei-shows-off-ai-computing-system-rival-nvidias-top-product-2025-07-26/" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://techcrunch.com/2025/07/25/meta-names-shengjia-zhao-as-chief-scientist-of-ai-superintelligence-unit/" target="_blank">1.2 Meta任命赵胜佳为AI超级智能部门首席科学家</a>
+                    </h3>
+                    <p class="news-abstract">Meta任命赵胜佳为AI超级智能部门首席科学家。</p>
+                    <p class="news-analysis">分析: 这标志着Meta在AI领域的进一步布局和人才引进。</p>
+                    <div class="news-meta">
+                        <span>来源: TechCrunch • 2025-07-25</span>
+                        <a href="https://techcrunch.com/2025/07/25/meta-names-shengjia-zhao-as-chief-scientist-of-ai-superintelligence-unit/" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://techcrunch.com/2025/07/25/google-is-testing-a-vibe-coding-app-called-opal/" target="_blank">1.3 谷歌测试名为Opal的vibe-coding应用</a>
+                    </h3>
+                    <p class="news-abstract">谷歌正在测试一款名为Opal的新应用。</p>
+                    <p class="news-analysis">分析: 该应用可能带来新的编程体验和创新。</p>
+                    <div class="news-meta">
+                        <span>来源: TechCrunch • 2025-07-25</span>
+                        <a href="https://techcrunch.com/2025/07/25/google-is-testing-a-vibe-coding-app-called-opal/" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://techcrunch.com/2025/07/25/tesla-wants-to-bring-its-robotaxis-to-san-francisco-heres-whats-standing-in-the-way/" target="_blank">1.4 特斯拉计划将Robotaxi引入旧金山</a>
+                    </h3>
+                    <p class="news-abstract">特斯拉计划在旧金山推出Robotaxi服务。</p>
+                    <p class="news-analysis">分析: 这将推动自动驾驶技术的实际应用和商业化进程。</p>
+                    <div class="news-meta">
+                        <span>来源: TechCrunch • 2025-07-25</span>
+                        <a href="https://techcrunch.com/2025/07/25/tesla-wants-to-bring-its-robotaxis-to-san-francisco-heres-whats-standing-in-the-way/" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://techcrunch.com/2025/07/25/apple-broadens-app-stores-age-rating-system/" target="_blank">1.5 苹果扩大App Store年龄评级系统</a>
+                    </h3>
+                    <p class="news-abstract">苹果宣布扩大App Store的年龄评级系统。</p>
+                    <p class="news-analysis">分析: 此举有助于更精准地管理应用内容，保护用户权益。</p>
+                    <div class="news-meta">
+                        <span>来源: TechCrunch • 2025-07-25</span>
+                        <a href="https://techcrunch.com/2025/07/25/apple-broadens-app-stores-age-rating-system/" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+            </div>
+            <div class="topic-card">
+                <h2 class="topic-title">[02] 监管动态</h2>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://www.reuters.com/sustainability/boards-policy-regulation/us-commerce-secretary-says-trump-really-likes-tiktok-app-has-move-us-ownership-2025-07-27/" target="_blank">2.1 美国商务部长表示TikTok需转为美国所有以解决安全问题</a>
+                    </h3>
+                    <p class="news-abstract">美国商务部长称TikTok需转为美国所有以解决国家安全和数据隐私问题。</p>
+                    <p class="news-analysis">分析: 这反映了美国对外国科技企业日益严格的监管立场。</p>
+                    <div class="news-meta">
+                        <span>来源: 路透社 • 2025-07-27</span>
+                        <a href="https://www.reuters.com/sustainability/boards-policy-regulation/us-commerce-secretary-says-trump-really-likes-tiktok-app-has-move-us-ownership-2025-07-27/" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://techcrunch.com/2025/07/26/u-k-starts-enforcing-online-age-check-rules/" target="_blank">2.2 英国开始执行在线年龄检查规则</a>
+                    </h3>
+                    <p class="news-abstract">英国开始实施在线年龄检查规则。</p>
+                    <p class="news-analysis">分析: 此举旨在保护未成年人免受不适宜内容的影响。</p>
+                    <div class="news-meta">
+                        <span>来源: TechCrunch • 2025-07-26</span>
+                        <a href="https://techcrunch.com/2025/07/26/u-k-starts-enforcing-online-age-check-rules/" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://36kr.com/search/articles/%E6%96%87%EF%BD%9C%E5%AF%8C%E5%85%85" target="_blank">2.3 中国北京大学发布学业评价工作新通知</a>
+                    </h3>
+                    <p class="news-abstract">北京大学发布关于进一步做好本科学业评价工作的通知。</p>
+                    <p class="news-analysis">分析: 此举旨在优化学业评价体系，提升教育质量。</p>
+                    <div class="news-meta">
+                        <span>来源: 36氪 • 2025-07-28</span>
+                        <a href="https://36kr.com/search/articles/%E6%96%87%EF%BD%9C%E5%AF%8C%E5%85%85" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://36kr.com/search/articles/%E7%8E%8B%E5%85%89%E7%86%99%EF%BC%9A" target="_blank">2.4 香港中文大学（深圳）发放未录取通知书引发关注</a>
+                    </h3>
+                    <p class="news-abstract">香港中文大学（深圳）向部分学生发放未录取通知书。</p>
+                    <p class="news-analysis">分析: 这一做法引起社会广泛关注和讨论。</p>
+                    <div class="news-meta">
+                        <span>来源: 36氪 • 2025-07-28</span>
+                        <a href="https://36kr.com/search/articles/%E7%8E%8B%E5%85%89%E7%86%99%EF%BC%9A" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://36kr.com/search/articles/%E7%8E%8B%E5%85%89%E7%86%99%EF%BC%9A" target="_blank">2.5 华中师范大学延长研究生学制</a>
+                    </h3>
+                    <p class="news-abstract">华中师范大学宣布延长全日制社会工作专业硕士研究生学制。</p>
+                    <p class="news-analysis">分析: 此举有助于提高研究生培养质量。</p>
+                    <div class="news-meta">
+                        <span>来源: 36氪 • 2025-07-28</span>
+                        <a href="https://36kr.com/search/articles/%E7%8E%8B%E5%85%89%E7%86%99%EF%BC%9A" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <p>© 2025 Tech Intelligence Report | 极简赛博风格设计</p>
+            <p style="margin-top: 10px; color: #00ff88;">Generated on 2025年07月28日</p>
+        </footer>
+    </div>
+</body>
+</html>
