@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>科技情报报告 - 2025年07月29日</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            color: #ffffff;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 2px solid #00ff88;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            color: #00ff88;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+        }
+        
+        .header .subtitle {
+            font-size: 1.2rem;
+            color: #a0a0a0;
+            text-transform: uppercase;
+        }
+        
+        .infographic-section {
+            text-align: center;
+            margin: 40px 0;
+            padding: 30px;
+            background: rgba(26, 26, 26, 0.8);
+            border-radius: 10px;
+            border: 1px solid #333333;
+        }
+        
+        .infographic-section h2 {
+            color: #00d4ff;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .infographic-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.2);
+            margin: 20px 0;
+        }
+        
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .topic-card {
+            background: rgba(26, 26, 26, 0.9);
+            border-radius: 10px;
+            padding: 25px;
+            border: 1px solid #333333;
+            transition: all 0.3s ease;
+        }
+        
+        .topic-card:hover {
+            border-color: #00ff88;
+            box-shadow: 0 5px 20px rgba(0, 255, 136, 0.3);
+        }
+        
+        .topic-title {
+            color: #00ff88;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #00ff88;
+            padding-bottom: 10px;
+        }
+        
+        .news-item {
+            margin-bottom: 25px;
+            padding: 15px;
+            background: rgba(10, 10, 10, 0.5);
+            border-radius: 8px;
+            border-left: 3px solid #00d4ff;
+        }
+        
+        .news-title {
+            color: #ffffff;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        
+        .news-title a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .news-title a:hover {
+            color: #00ff88;
+        }
+        
+        .news-abstract {
+            color: #a0a0a0;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+        
+        .news-analysis {
+            color: #666666;
+            font-size: 0.9rem;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+        
+        .news-meta {
+            color: #00d4ff;
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .news-link {
+            color: #00ff88;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        
+        .news-link:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.8);
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid #333333;
+            margin-top: 60px;
+            color: #666666;
+        }
+        
+        .cyber-decoration {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            opacity: 0.1;
+            background-image: 
+                linear-gradient(90deg, transparent 98%, #00ff88 100%),
+                linear-gradient(0deg, transparent 98%, #00d4ff 100%);
+            background-size: 50px 50px;
+        }
+        
+        @media (max-width: 768px) {
+            .topics-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cyber-decoration"></div>
+    
+    <div class="container">
+        <header class="header">
+            <h1>科技情报报告</h1>
+            <div class="subtitle">每日简报 • 2025年07月29日</div>
+        </header>
+        
+        <div class="topics-grid">
+            <div class="topic-card">
+                <h2 class="topic-title">[01] 科技公司动态</h2>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://techcrunch.com/2025/07/28/ai-data-analyst-startup-julius-nabs-10m-seed-round/" target="_blank">1.1 AI data analyst startup Julius nabs $10M seed round</a>
+                    </h3>
+                    <p class="news-abstract">初创公司Julius在种子轮融资中筹集了1000万美元，专注于AI数据分析领域。</p>
+                    <p class="news-analysis">分析: 此次融资将助力Julius进一步开发其AI技术，提升数据分析能力，为客户提供更精准的商业洞察。</p>
+                    <div class="news-meta">
+                        <span>来源: TechCrunch • 2025-07-28</span>
+                        <a href="https://techcrunch.com/2025/07/28/ai-data-analyst-startup-julius-nabs-10m-seed-round/" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://techcrunch.com/2025/07/28/waymo-taps-avis-to-manage-robotaxi-fleet-in-dallas/" target="_blank">1.2 Waymo taps Avis to manage robotaxi fleet in Dallas</a>
+                    </h3>
+                    <p class="news-abstract">Waymo与Avis合作，在达拉斯管理其机器人出租车车队。</p>
+                    <p class="news-analysis">分析: 此举有助于Waymo扩大其自动驾驶服务范围，同时借助Avis的专业经验优化车队运营。</p>
+                    <div class="news-meta">
+                        <span>来源: TechCrunch • 2025-07-28</span>
+                        <a href="https://techcrunch.com/2025/07/28/waymo-taps-avis-to-manage-robotaxi-fleet-in-dallas/" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://techcrunch.com/2025/07/28/harmonic-the-robinhood-ceos-ai-math-startup-launches-an-ai-chatbot-app/" target="_blank">1.3 Harmonic, the Robinhood CEO’s AI math startup, launches an AI chatbot app</a>
+                    </h3>
+                    <p class="news-abstract">Robinhood CEO创办的AI数学创业公司Harmonic推出了一款AI聊天机器人应用。</p>
+                    <p class="news-analysis">分析: 这款应用将利用AI技术帮助用户解决数学问题，有望成为教育领域的创新工具。</p>
+                    <div class="news-meta">
+                        <span>来源: TechCrunch • 2025-07-28</span>
+                        <a href="https://techcrunch.com/2025/07/28/harmonic-the-robinhood-ceos-ai-math-startup-launches-an-ai-chatbot-app/" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://techcrunch.com/2025/07/28/flexport-sells-former-freight-unicorn-convoys-tech-two-years-after-buying-it/" target="_blank">1.4 Flexport sells former freight unicorn Convoy's tech 2 years after buying it</a>
+                    </h3>
+                    <p class="news-abstract">Flexport在收购Convoy两年后出售了其货运技术。</p>
+                    <p class="news-analysis">分析: 这一举动表明Flexport可能在重新评估其业务战略，以更好地集中资源发展核心业务。</p>
+                    <div class="news-meta">
+                        <span>来源: TechCrunch • 2025-07-28</span>
+                        <a href="https://techcrunch.com/2025/07/28/flexport-sells-former-freight-unicorn-convoys-tech-two-years-after-buying-it/" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://techcrunch.com/2025/07/28/microsoft-edge-is-now-an-ai-browser-with-launch-of-copilot-mode/" target="_blank">1.5 Microsoft Edge is now an AI browser with launch of ‘Copilot Mode’</a>
+                    </h3>
+                    <p class="news-abstract">微软Edge浏览器推出‘Copilot Mode’，正式成为一款AI浏览器。</p>
+                    <p class="news-analysis">分析: 这标志着浏览器功能的重大升级，将极大提升用户的上网体验和工作效率。</p>
+                    <div class="news-meta">
+                        <span>来源: TechCrunch • 2025-07-28</span>
+                        <a href="https://techcrunch.com/2025/07/28/microsoft-edge-is-now-an-ai-browser-with-launch-of-copilot-mode/" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+            </div>
+            <div class="topic-card">
+                <h2 class="topic-title">[02] 监管动态</h2>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://www.reuters.com/sustainability/boards-policy-regulation/us-commerce-secretary-says-trump-really-likes-tiktok-app-has-move-us-ownership-2025-07-27/" target="_blank">2.1 US commerce secretary says Trump really likes TikTok, but app has to move to US ownership</a>
+                    </h3>
+                    <p class="news-abstract">美国商务部长表示特朗普对TikTok持积极态度，但该应用必须转移至美国实体拥有。</p>
+                    <p class="news-analysis">分析: 此举凸显美国在数据安全与外国科技企业运营之间的政策博弈持续升级，可能影响全球科技企业的布局。</p>
+                    <div class="news-meta">
+                        <span>来源: 路透社 • Sun, 27 Jul 2025 21:09:00 GMT</span>
+                        <a href="https://www.reuters.com/sustainability/boards-policy-regulation/us-commerce-secretary-says-trump-really-likes-tiktok-app-has-move-us-ownership-2025-07-27/" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://techcrunch.com/2025/07/28/20-national-security-experts-urge-trump-administration-to-restrict-nvidia-h20-sales-to-china/" target="_blank">2.2 20 national security experts urge Trump administration to restrict Nvidia H20 sales to China</a>
+                    </h3>
+                    <p class="news-abstract">20位国家安全专家呼吁特朗普政府限制Nvidia H20对中国销售。</p>
+                    <p class="news-analysis">分析: 此举可能加剧中美科技竞争，影响全球半导体供应链稳定。</p>
+                    <div class="news-meta">
+                        <span>来源: TechCrunch • 2025-07-28</span>
+                        <a href="https://techcrunch.com/2025/07/28/20-national-security-experts-urge-trump-administration-to-restrict-nvidia-h20-sales-to-china/" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://techcrunch.com/2025/07/26/u-k-starts-enforcing-online-age-check-rules/" target="_blank">2.3 UK starts enforcing online age-check rules</a>
+                    </h3>
+                    <p class="news-abstract">英国开始实施在线年龄检查规则。</p>
+                    <p class="news-analysis">分析: 此举旨在保护未成年人网络安全，可能对互联网平台的运营模式产生深远影响。</p>
+                    <div class="news-meta">
+                        <span>来源: TechCrunch • 2025-07-26</span>
+                        <a href="https://techcrunch.com/2025/07/26/u-k-starts-enforcing-online-age-check-rules/" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://techcrunch.com/2025/07/28/anthropic-unveils-new-rate-limits-to-curb-claude-code-power-users/" target="_blank">2.4 Anthropic unveils new rate limits to curb Claude Code power users</a>
+                    </h3>
+                    <p class="news-abstract">Anthropic推出新限速措施，限制Claude Code的高使用量用户。</p>
+                    <p class="news-analysis">分析: 此举有助于平衡资源分配，确保更多用户能够公平使用AI服务。</p>
+                    <div class="news-meta">
+                        <span>来源: TechCrunch • 2025-07-28</span>
+                        <a href="https://techcrunch.com/2025/07/28/anthropic-unveils-new-rate-limits-to-curb-claude-code-power-users/" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <h3 class="news-title">
+                        <a href="https://techcrunch.com/2025/07/28/new-york-state-cyber-chief-calls-out-trump-for-cybersecurity-cuts/" target="_blank">2.5 New York state cyber chief calls out Trump for cybersecurity cuts</a>
+                    </h3>
+                    <p class="news-abstract">纽约州网络安全部长批评特朗普削减网络安全预算。</p>
+                    <p class="news-analysis">分析: 此举可能削弱美国的网络安全防御能力，引发公众对政府政策的质疑。</p>
+                    <div class="news-meta">
+                        <span>来源: TechCrunch • 2025-07-28</span>
+                        <a href="https://techcrunch.com/2025/07/28/new-york-state-cyber-chief-calls-out-trump-for-cybersecurity-cuts/" target="_blank" class="news-link">🔗 查看原文</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <p>© 2025 Tech Intelligence Report | 极简赛博风格设计</p>
+            <p style="margin-top: 10px; color: #00ff88;">Generated on 2025年07月29日</p>
+        </footer>
+    </div>
+</body>
+</html>
